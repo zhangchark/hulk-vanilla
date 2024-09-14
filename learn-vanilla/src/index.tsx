@@ -20,3 +20,7 @@ const LearnVanilla = NativeModules.LearnVanilla
 export function multiply(a: number, b: number): Promise<number> {
   return LearnVanilla.multiply(a, b);
 }
+
+export function preInitWithAppKey(appKey: string): Promise<boolean> {
+  return LearnVanilla.preInitWithAppKey(appKey);
+}

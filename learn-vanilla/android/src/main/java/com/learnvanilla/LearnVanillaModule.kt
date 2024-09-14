@@ -22,4 +22,9 @@ class LearnVanillaModule(reactContext: ReactApplicationContext) :
   companion object {
     const val NAME = "LearnVanilla"
   }
+
+    fun preInitWithAppKey(appKey: String,promise: Promise){ 
+        promise.resolve(true)
+   }
+
 }
